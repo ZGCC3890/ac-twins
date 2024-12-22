@@ -1,0 +1,3 @@
+F:/JetBrains/ac-twins/cmake-build-debug/CMakeFiles/ac-twins.dir
+F:/JetBrains/ac-twins/cmake-build-debug/CMakeFiles/edit_cache.dir
+F:/JetBrains/ac-twins/cmake-build-debug/CMakeFiles/rebuild_cache.dir

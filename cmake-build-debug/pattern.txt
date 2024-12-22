@@ -1,0 +1,11 @@
+DIANA
+Diana
+HELEN
+Helen
+BERTRAM
+Bertram
+BERNARDO
+Bernardo
+HAMLET
+Hamlet
+pattern
