@@ -18,16 +18,17 @@ struct ACNode {
     }
 };
 
-//初始化ac自动机
+// 初始化ac自动机
 void InitACAutomaton();
-//根据pattern建表
+// 根据pattern建表 (pattern, pattern长度, 索引)
 void InsertPattern(const char* pattern, int len, int index);
-//构建失败指针
+// 构建失败指针
 void BuildFailPointer();
-//AC匹配
+// AC下一状态计算 (当前状态, 当前字符)
 int ACNextState(int currentState, char ch);
+// AC扫描 (ltf输出的metadata, metadata长度, 匹配成功个数, 解压后字符串, 状态表)
 void ACCompressedScan(lzf_f* metaData, int metaDataLength, int* matchedCounts, const char* uncompressed, int* state);
-//整合函数
+// 整合函数 (ltf输出的metadata, metadata长度, pattern表, 解压后字符串, 状态表, 匹配成功个数)
 void ACCompressedMatch(lzf_f* metaData, int metaDataLength, std::vector<PatternInfo> patInfo, const char* uncompressed, int* state, int* matchedCounts);
 
 #endif //_AC_SCAN_H
