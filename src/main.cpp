@@ -5,9 +5,9 @@
 #include "utils.h"
 #include "ac_scan.h"
 
-#include "lzf_c.c"
-#include "lzf_d.c"
-//#include "lzf.h"
+#include "./lzf/lzf_c.c"
+#include "./lzf/lzf_d.c"
+//#include "./lzf/lzf.h"
 
 using namespace std;
 
